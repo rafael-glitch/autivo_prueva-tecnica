@@ -7,11 +7,15 @@ Incluye análisis de vecindad, rutas terrestres, estadísticas regionales y bús
 
 ##  Tecnologías Utilizadas
 
-| **Python 3.10+** | Lenguaje principal para implementar la lógica de la API. |
-| **FastAPI** | Framework para crear la API REST, definir endpoints y manejar las solicitudes HTTP. |
-| **Uvicorn** | Servidor ASGI utilizado para ejecutar la aplicación FastAPI en modo desarrollo o producción. |
-| **Requests** | Librería para consumir la API externa [REST Countries](https://restcountries.com) y obtener los datos de los países. |
-| **Pydantic** | Utilizado para definir modelos de datos (schemas) y validar automáticamente la estructura del JSON recibido en la peticion POST. |
+| **Python 3.10+** | Lenguaje principal para implementar la lógica de la API.
+
+| **FastAPI** | Framework para crear la API REST, definir endpoints y manejar las solicitudes HTTP.
+
+| **Uvicorn** | Servidor ASGI utilizado para ejecutar la aplicación FastAPI en modo desarrollo o producción.
+
+| **Requests** | Librería para consumir la API externa [REST Countries](https://restcountries.com) y obtener los datos de los países.
+
+| **Pydantic** | Utilizado para definir modelos de datos (schemas) y validar automáticamente la estructura del JSON recibido en la peticion POST.
 
 ---
 
@@ -51,5 +55,5 @@ Incluye análisis de vecindad, rutas terrestres, estadísticas regionales y bús
     GET     /route?from=XXX&to=YYY      determina si existe ruta terrestre entre 2 paises
 
     GET     /regions/{region}/stats     muestra las estadisticas de poblacion y area por reguino (americas)
-    
+
     POST    /countries/search           busca paises segun filtros espesificos
