@@ -19,25 +19,24 @@ Incluye análisis de vecindad, rutas terrestres, estadísticas regionales y bús
 
 1. **Clonar el repositorio:**
    ```bash
-git clone <https://github.com/rafael-glitch/Autivo_prueba.git>
-cd autivo_prueba_tecnica
+   git clone <https://github.com/rafael-glitch/Autivo-prueba.git>
+   cd autivo_prueba_tecnica
 
 2. **crear y activa el entorno virtual:**
    ```bash
-python -m venv venv
-venv\Scripts\activate     # En Windows
-source venv/bin/activate  # En Linux o macOS
+   python -m venv venv
+   venv\Scripts\activate     # En Windows
+   source venv/bin/activate  # En Linux o macOS
 ---
 3. **instalar dependencias**
    ```bash
-pip install -r requirements.txt
+   pip install -r requirements.txt
 
 ---
 
 4. **ejecutar API**
    ```bash
-
-uvicorn main:app --reload
+   uvicorn main:app --reload
 
 5. **Probar en el navegador**
     http://127.0.0.1:8000/docs
