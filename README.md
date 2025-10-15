@@ -41,9 +41,15 @@ Incluye análisis de vecindad, rutas terrestres, estadísticas regionales y bús
    
 ---
 5. **Probar en el navegador**
+
     http://127.0.0.1:8000/docs
+
     GET     /                           mensaje de vienvenida
+
     GET     /countries/{code}/neighbors muestra los paises del codigo especificado(codigo de chile: CHL)
+
     GET     /route?from=XXX&to=YYY      determina si existe ruta terrestre entre 2 paises
+
     GET     /regions/{region}/stats     muestra las estadisticas de poblacion y area por reguino (americas)
+    
     POST    /countries/search           busca paises segun filtros espesificos
